@@ -2,6 +2,7 @@ import React, {useEffect} from "react";
 import axios from "axios";
 import "./style.scss";
 import Modal from "../modal/Modal";
+import Person from "../person/Person";
 
 export default class Persons extends React.Component {
     constructor(props) {
@@ -43,14 +44,7 @@ export default class Persons extends React.Component {
                     </thead>
                     <tbody>
                         {this.state.persons.map(person =>
-                            <tr className="persons__elem" key={person.id}>
-                                    <td>{person.firstName}</td>
-                                    <td>{person.lastName}</td>
-                                    <td>
-                                        <button className="btn update"/>
-                                        <button className="btn delete"/>
-                                    </td>
-                            </tr>
+                            <Person key={person.id} id={person.id} firstName={person.firstName} lastName={person.lastName}/>
                         )}
                     </tbody>
                 </table>

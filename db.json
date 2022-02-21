@@ -1,9 +1,9 @@
 {
   "persons": [
     {
-      "id": 1,
       "firstName": "Christine",
-      "lastName": "Smith"
+      "lastName": "Smith",
+      "id": 1
     },
     {
       "id": 2,
@@ -51,14 +51,9 @@
       "lastName": "Sullivan"
     },
     {
-      "firstName": "Елизавета",
-      "lastName": "Аксёнова",
+      "firstName": "test",
+      "lastName": "test",
       "id": 11
-    },
-    {
-      "firstName": "Надежда",
-      "lastName": "Шевченко",
-      "id": 12
     }
   ]
 }

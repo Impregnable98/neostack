@@ -13,7 +13,6 @@ const Modal = props => {
         axios.post(`/api/v1/persons/`,{firstName: firstName, lastName: lastName})
             .then(res => {
                 props.onClose();
-                window.location.reload();
                 console.log(res.data);
             })
     }
